@@ -97,6 +97,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 .site-wrapper {
+    margin: 0em 2em 2em 2em;
   display: grid;
   grid-template-rows: 5em 1fr 1fr 1fr 1fr 1fr;
   grid-template-columns: 4fr 4fr 4fr 4fr;
@@ -115,6 +116,7 @@ body {
   margin: 0;
 }
 header {
+  
   grid-area: header;
 }
 nav:after {
@@ -126,6 +128,7 @@ nav {
   background-color: #40475a;
   position: fixed;
   width: 100%;
+  
 }
 nav ul {
   padding: 1em;
