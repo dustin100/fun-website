@@ -131,10 +131,13 @@ header nav ul {
   list-style-type:none;
   padding: 0;
   margin: 0;
+    display:table;
+  text-align:center;
 }
 header nav ul li {
-  float: left;
+  float: none;
   border: 1px solid black;
+  display:inline-block;
 }
 header nav ul li a {
    display: block;
@@ -142,8 +145,7 @@ header nav ul li a {
   color: white;
   text-transform: uppercase;
   font-size: 1em;
-  padding: 1em;
-  
+  padding: 1em;  
 }
 header nav a:hover {
   color: white;
@@ -153,7 +155,7 @@ header nav a:hover {
 .hero-image {
   grid-area: hero;
   height: 20em;
-  background-image: url("../img/bg-2.jpg");
+  background-image: url("../img/bg-1.jpg");
   width: 100%;
   background-size: cover;
   background-attachment: fixed;
