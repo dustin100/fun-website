@@ -99,7 +99,7 @@ textarea {
 .site-wrapper {
     margin: 0em 2em 2em 2em;
   display: grid;
-  grid-template-rows: 5em 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 5em auto auto auto auto 1fr;
   grid-template-columns: 4fr 4fr 4fr 4fr;
 
   grid-template-areas:
@@ -178,6 +178,7 @@ header nav a:hover {
 .card-1 {
   grid-area: card-1;
   border: 1px solid #646d7c;
+
   
 }
 .card-2 {
