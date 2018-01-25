@@ -99,8 +99,8 @@ textarea {
 .site-wrapper {
     margin: 0em 2em 2em 2em;
   display: grid;
-  grid-template-rows: 5em 1fr 1fr 1fr 1fr 1fr;
-  grid-template-columns: 4fr 4fr 4fr 4fr;
+  grid-template-rows: 2em auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto;
 
   grid-template-areas:
     "header header header header"
@@ -109,7 +109,7 @@ textarea {
     "card-4 card-4 card-5 card-5"
     "services services services services"
     "services-c1 services-c2 services-c3 services-c4";
-  grid-gap:0.75em;
+  grid-gap: 0.75em;
 }
 body {
   padding: 0;
@@ -169,15 +169,18 @@ header nav a:hover {
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
+
 }
 
 .hero-image h1 {
   text-align: center;
 
 }
+
 .card-1 {
   grid-area: card-1;
   border: 1px solid #646d7c;
+
   
 }
 .card-2 {
@@ -191,10 +194,34 @@ header nav a:hover {
 .card-4 {
   grid-area: card-4;
   border: 1px solid #646d7c;
+  
+}
+.card-4 p,  h2  { 
+    text-align: center;
+    margin:0 2em 0 2em;
+
+
+}
+.card-4 img {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
 }
 .card-5 {
   grid-area: card-5;
   border: 1px solid #646d7c;
+    
+}
+.card-5 p,  h2  { 
+    text-align: center;
+     margin:0 2em 0 2em;
+  
+
+}
+.card-5 img {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
 }
 
 .services {
@@ -219,15 +246,29 @@ header nav a:hover {
   grid-area: services-c1;
   border: 1px solid black;
 }
+.services-c1 img {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   }
 
 .services-c2 {
   grid-area: services-c2;
   border: 1px solid black;
 }
-
+.services-c2 img {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
 .services-c3 {
   grid-area: services-c3;
   border: 1px solid black;
+}
+.services-c3 img {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
 }
 
 .services-c4 {
@@ -235,7 +276,11 @@ header nav a:hover {
   border: 1px solid black;
 }
 
-
+.services-c4 img {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
 
 
 
