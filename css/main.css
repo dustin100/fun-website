@@ -173,26 +173,28 @@ header nav a:hover {
 
 .hero-image h1 {
   text-align: center;
+
 }
 .card-1 {
   grid-area: card-1;
-  border: 1px solid black;
+  border: 1px solid #646d7c;
+  
 }
 .card-2 {
   grid-area: card-2;
-  border: 1px solid black;
+  border: 1px solid #646d7c;
 }
 .card-3 {
   grid-area: card-3;
-  border: 1px solid black;
+  border: 1px solid #646d7c;
 }
 .card-4 {
   grid-area: card-4;
-  border: 1px solid black;
+  border: 1px solid #646d7c;
 }
 .card-5 {
   grid-area: card-5;
-  border: 1px solid black;
+  border: 1px solid #646d7c;
 }
 
 .services {
