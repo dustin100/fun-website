@@ -97,19 +97,23 @@ textarea {
    Author's custom styles
    ========================================================================== */
 .site-wrapper {
-    margin: 0em 2em 2em 2em;
+    margin: 0em 2em 0em 0em;
   display: grid;
-  grid-template-rows: 2em auto auto auto auto auto;
-  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 2em auto 23em auto auto auto auto 25em auto;
+  grid-template-columns: auto auto;
 
   grid-template-areas:
-    "header header header header"
-    "hero hero hero hero"
-    "card-1 card-2 card-3 ."
-    "card-4 card-4 card-5 card-5"
-    "services services services services"
-    "services-c1 services-c2 services-c3 services-c4";
+    "header header"
+    "hero hero"
+    "card-wrapper-1 card-wrapper-1"
+    "card-wrapper-2 card-wrapper-2"
+    "services services"
+    "card-wrapper-3 card-wrapper-3"
+    "one-big-column one-big-column"
+    "contact-wrapper contact-wrapper"
+    "footer footer";
   grid-gap: 0.75em;
+  width: 100%;
 }
 body {
   padding: 0;
@@ -132,7 +136,7 @@ nav:after {
 header nav ul {
   background-color: #40475a;
   position: fixed;
-  width: 95%;
+  width: 100%;
   list-style-type:none;
   padding: 0;
   margin: 0;
@@ -176,53 +180,49 @@ header nav a:hover {
   text-align: center;
 
 }
-
-.card-1 {
+.card-wrapper-1{
+  grid-area: card-wrapper-1;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "card-1 card-2 card-3";
+}
+.card-wrapper-1 .card-1 {
   grid-area: card-1;
-  border: 1px solid #646d7c;
-
+  margin: 0 1em 0 1em;
+  
   
 }
-.card-2 {
+.card-wrapper-1 .card-2 {
   grid-area: card-2;
-  border: 1px solid #646d7c;
+  margin: 0 1em 0 1em;
 }
-.card-3 {
+.card-wrapper-1 .card-3 {
   grid-area: card-3;
-  border: 1px solid #646d7c;
+  margin: 0 1em 0 1em;
 }
-.card-4 {
+.card-wrapper-2{
+  grid-area: card-wrapper-2;
+  display:grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr ;
+  grid-template-areas: "card-4 card-5";
+  }
+.card-wrapper-2 .card-4 {
   grid-area: card-4;
-  border: 1px solid #646d7c;
+  text-align: center;
+     margin:0 2em 0 2em; 
   
 }
-.card-4 p,  h2  { 
-    text-align: center;
-    margin:0 2em 0 2em;
 
 
-}
-.card-4 img {
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-}
 .card-5 {
   grid-area: card-5;
-  border: 1px solid #646d7c;
+  text-align: center;
+     margin:0 2em 0 2em; 
     
 }
-.card-5 p,  h2  { 
-    text-align: center;
-     margin:0 2em 0 2em;
-  
 
-}
-.card-5 img {
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-}
 
 .services {
   grid-area: services;
@@ -233,6 +233,7 @@ header nav a:hover {
   background-attachment: fixed;
   background-position: center center;
 }
+
 .services h1 {
   color: white;
   text-align: center;
@@ -241,45 +242,67 @@ header nav a:hover {
   color: white;
   margin: 3em;
   font-size: 18px;
+  text-align: center;
 }
-.services-c1 {
+.card-wrapper-3{
+  grid-area: card-wrapper-3;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "services-c1 services-c2 services-c3 services-c4";
+}
+.card-wrapper-3 .services-c1 {
   grid-area: services-c1;
-  border: 1px solid black;
+  text-align: center;
+     margin:0 2em 0 2em; 
+  
 }
-.services-c1 img {
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-   }
 
-.services-c2 {
+
+.card-wrapper-3 .services-c2 {
   grid-area: services-c2;
-  border: 1px solid black;
+  text-align: center;
+     margin:0 2em 0 2em; 
+  
 }
-.services-c2 img {
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-}
-.services-c3 {
+
+.card-wrapper-3 .services-c3 {
   grid-area: services-c3;
-  border: 1px solid black;
-}
-.services-c3 img {
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
+  text-align: center;
+     margin:0 2em 0 2em; 
+
 }
 
-.services-c4 {
+
+.card-wrapper-3 .services-c4 {
   grid-area: services-c4;
-  border: 1px solid black;
+  text-align: center;
+     margin:0 2em 0 2em; 
 }
 
-.services-c4 img {
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
+.one-big-column{
+  grid-area: one-big-column;
+  text-align: center;
+     margin:0 2em 0 2em; 
+}
+
+.contact-wrapper {
+  grid-area: contact-wrapper;
+  background-image: url(../img/bg-3.jpg);
+  background-attachment: fixed;
+  background-position: center center;
+
+
+}
+
+.contact-wrapper h1{
+  color: #fff;
+  text-align: center;;
+}
+footer {
+  grid-area: footer;
+  background-color: #fff;
+  text-align: center;
 }
 
 
