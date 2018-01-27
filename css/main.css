@@ -16,6 +16,9 @@ html {
     line-height: 1.4;
 }
 
+
+
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -96,10 +99,13 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+{
+    font-family: "Open Sans", Helvetica, Arial, sans-serif!important;
+}
 .site-wrapper {
     margin: 0em 2em 0em 0em;
   display: grid;
-  grid-template-rows: 2em auto 23em auto auto auto auto 25em auto;
+  grid-template-rows: 2em auto auto auto auto auto auto 25em auto;
   grid-template-columns: auto auto;
 
   grid-template-areas:
@@ -138,7 +144,7 @@ header nav ul {
   position: fixed;
   width: 100%;
   list-style-type:none;
-  padding: 0;
+  padding: 0.5em;
   margin: 0;
     display:table;
   text-align:center;
@@ -165,6 +171,8 @@ header nav a:hover {
 }
 
 
+
+
 .hero-image {
   grid-area: hero;
   height: 20em;
@@ -178,28 +186,86 @@ header nav a:hover {
 
 .hero-image h1 {
   text-align: center;
-
+margin-top: 3em;
+color: white;
 }
 .card-wrapper-1{
   grid-area: card-wrapper-1;
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr ;
   grid-template-areas: "card-1 card-2 card-3";
+  
 }
 .card-wrapper-1 .card-1 {
   grid-area: card-1;
   margin: 0 1em 0 1em;
-  
-  
+  background-color: #f4f6f9; 
+
+}
+
+.card-wrapper-1 .card-1  img { 
+  width:100%;
+}
+
+.card-wrapper-1 .card-1  p {
+  margin: 0em 1em 0em 1em ;
+}
+
+.card-wrapper-1 .card-1  h2 {
+margin: 1em;
+  color:#178A27;
+  font-size: 1.5em;
+}
+.card-wrapper-1 .card-1 button {
+  border-radius: 0.25em;
+  font-size: 1em;
+  background-color: #178A27;
+  color: white;
+  padding: 0.75em;
+  margin-left: 10em;
+  margin-top: 1em;
 }
 .card-wrapper-1 .card-2 {
   grid-area: card-2;
   margin: 0 1em 0 1em;
+  background-color: #f4f6f9; 
+  
 }
+
+
+.card-wrapper-1 .card-2  img { 
+  width:100%;
+}
+
+.card-wrapper-1 .card-2  p {
+  margin: 0em 1em 0em 1em ;
+}
+
+.card-wrapper-1 .card-2  h2 {
+margin: 1em;
+  color:#1686C1;
+  font-size: 1.5em;
+}
+
+
 .card-wrapper-1 .card-3 {
   grid-area: card-3;
   margin: 0 1em 0 1em;
+  background-color: #f4f6f9; 
+}
+.card-wrapper-1 .card-3  img { 
+  width:100%;
+}
+
+.card-wrapper-1 .card-3  p {
+  margin: 0em 1em 0em 1em ;
+}
+
+.card-wrapper-1 .card-3  h2 {
+margin: 1em;
+  color:#666;
+  font-size: 1.5em;
 }
 .card-wrapper-2{
   grid-area: card-wrapper-2;
@@ -210,17 +276,43 @@ header nav a:hover {
   }
 .card-wrapper-2 .card-4 {
   grid-area: card-4;
-  text-align: center;
-     margin:0 2em 0 2em; 
+     margin:0 2em 0 2em;
+     background-color: #f4f6f9;  
   
+}
+.card-wrapper-2 .card-4  img { 
+  width:100%;
+}
+
+.card-wrapper-2 .card-4  p {
+  margin: 0em 1em 0em 1em ;
+}
+
+.card-wrapper-2 .card-4  h2 {
+  text-align: center;
+  color:#666;
+  font-size: 1.5em;
 }
 
 
-.card-5 {
+.card-wrapper-2 .card-5 {
   grid-area: card-5;
-  text-align: center;
      margin:0 2em 0 2em; 
+     background-color: #f4f6f9; 
     
+}
+.card-wrapper-2 .card-5 img { 
+  width:100%;
+}
+
+.card-wrapper-2 .card-5 p {
+  margin: 0em 1em 0em 1em ;
+}
+
+.card-wrapper-2 .card-5 h2 {
+  text-align: center;
+  color:#666;
+  font-size: 1.5em;
 }
 
 
@@ -253,37 +345,95 @@ header nav a:hover {
 }
 .card-wrapper-3 .services-c1 {
   grid-area: services-c1;
-  text-align: center;
      margin:0 2em 0 2em; 
+     background-color: #f4f6f9; 
   
 }
+.card-wrapper-3 .services-c1 img { 
+  width:100%;
+}
 
+.card-wrapper-3 .services-c1 p {
+  margin: 0em 1em 0em 1em ;
+}
+
+.card-wrapper-3 .services-c1 h2 {
+  text-align: center;
+  color:#666;
+  font-size: 1.5em;
+}
 
 .card-wrapper-3 .services-c2 {
   grid-area: services-c2;
-  text-align: center;
      margin:0 2em 0 2em; 
+     background-color: #f4f6f9; 
   
+}
+.card-wrapper-3 .services-c2 img { 
+  width:100%;
+}
+
+.card-wrapper-3 .services-c2 p {
+  margin: 0em 1em 0em 1em ;
+}
+
+.card-wrapper-3 .services-c2 h2 {
+  text-align: center;
+  color:#666;
+  font-size: 1.5em;
 }
 
 .card-wrapper-3 .services-c3 {
   grid-area: services-c3;
-  text-align: center;
      margin:0 2em 0 2em; 
+     background-color: #f4f6f9; 
+
 
 }
+.card-wrapper-3 .services-c3 img { 
+  width:100%;
+}
 
+.card-wrapper-3 .services-c3 p {
+  margin: 0em 1em 0em 1em ;
+}
+
+.card-wrapper-3 .services-c3 h2 {
+  text-align: center;
+  color:#666;
+  font-size: 1.5em;
+}
 
 .card-wrapper-3 .services-c4 {
   grid-area: services-c4;
-  text-align: center;
      margin:0 2em 0 2em; 
+     background-color: #f4f6f9; 
+}
+.card-wrapper-3 .services-c4 img { 
+  width:100%;
+}
+
+.card-wrapper-3 .services-c4 p {
+  margin: 0em 1em 0em 1em ;
+}
+
+.card-wrapper-3 .services-c4 h2 {
+  text-align: center;
+  color:#666;
+  font-size: 1.5em;
 }
 
 .one-big-column{
   grid-area: one-big-column;
-  text-align: center;
      margin:0 2em 0 2em; 
+     background-color: #f4f6f9; 
+
+}
+.one-big-column p {
+  margin: 0em 1em 0em 1em ;
+}
+.one-big-column img {
+  width: 100%;
 }
 
 .contact-wrapper {
@@ -299,6 +449,8 @@ header nav a:hover {
   color: #fff;
   text-align: center;;
 }
+
+
 footer {
   grid-area: footer;
   background-color: #fff;
